@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Memory Game Laura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/memory-game.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  </head>
+
+  <body class="body">
+    <div class="container">
+
+      <!-- Header section with information about the progression of the game and start/reset buttons -->
+      <header class="header">
+        <h3>
+          <button class="header-button" id="reset-button"><i class="fa fa-sync"></i></button>
+        </h3>
+        <div class="header-information">
+          <span class="label">Time elapsed:</span><time class="value">00:00:00</time>
+          <span class="label">Amount of moves played:</span><span class="value" id="counter">0</span>
+        </div>
+        <div class="header-stars">
+          <span class="label">Score:</span>
+          <span class="fas fa-star star" id="star-1"></span>
+          <span class="fas fa-star star" id="star-2"></span>
+          <span class="fas fa-star star" id="star-3"></span>
+        </div>
+      </header>
+
+      <!-- The card deck -->
+      <section class="cards" id="cards">
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+        <article id="card" class="card">
+          <span class="fas card-closed">
+        </article>
+      </section>
+
+      <!-- Modal dialog -->
+      <div class="is-hidden modal-overlay">
+        <div class="modal">
+          <section class="modal-information">
+            <p class="modal-text">Congratulations you have won this amazing memory game!!!</p>
+            <p class="modal-text" id="amount-of-moves"></p>
+            <p class="modal-text" id="time-elapsed"></p>
+            <p class="modal-text" id="stars-received"></p>
+          </section>
+          <menu class="menu-information">
+            <button class="modal-button" id="cancel" type="reset">Cancel</button>
+            <button class="modal-button" id="reset-button-modal">Reset the game and try again</button>
+          </menu>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../js/memory-game.js"></script>
+  </body>
+</html>
