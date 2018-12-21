@@ -12,7 +12,7 @@ The game ends once all cards have been correctly matched.
 [Font awesome](https://fontawesome.com/)
 
   #### External sources used
-  [Animista](http://animista.net/): but used to create the animations
+  [Animista](http://animista.net/): but used to create the animations   
   [Toptal](https://www.toptal.com/designers/subtlepatterns/): but background was freely obtained from here
 
 ### How to Run:
